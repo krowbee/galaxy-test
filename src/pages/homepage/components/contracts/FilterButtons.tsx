@@ -27,7 +27,7 @@ const buttons: ButtonType[] = [
 export function FilterButtons() {
   const [isActive, setIsActive] = useState(0);
   return (
-    <div className="flex flex-row flex-nowrap justify-between overflow-x-auto lg:overflow-x-hidden">
+    <div className="flex flex-row flex-nowrap justify-between overflow-x-auto lg:overflow-x-hidden scrollbar-none gap-2">
       {buttons.map(({ Icon, text }, index) => (
         <button
           key={text}
