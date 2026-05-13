@@ -1,17 +1,13 @@
 import { useMobile } from "../../../hooks/useMobile";
 import { BurgerMenu } from "./burger-menu/BurgerMenu";
+import { Logo } from "./logo";
 
 export function Header() {
   const isMobile = useMobile();
   return (
     <div className="absolute z-20 w-full px-3 pt-3 md:px-8 lg:px-12">
       <header className="flex flex-roww-full bg-linear-to-r justify-between items-center from-white/35 to-white/30  px-6 py-4 z-20 rounded-full">
-        <div className="relative">
-          <h2 className="relative uppercase text-2xl font-bold z-10 font-montserrat ">
-            Test task
-          </h2>
-          <div className="absolute rounded-full w-6 h-6 -top-1 -left-1.5 z-0 bg-blue-500" />
-        </div>
+        <Logo />
         <nav className="hidden md:flex md:flex-row  font-montserrat gap-10">
           <a href="#" className="text-blue-600 active">
             Home
