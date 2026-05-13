@@ -1,3 +1,5 @@
+import { FilterButtons } from "./contracts/FilterButtons";
+
 export function ContractsSection() {
   return (
     <section className="w-full flex flex-col gap-8 font-montserrat">
@@ -9,6 +11,7 @@ export function ContractsSection() {
           Search and connect with the right companies faster
         </p>
       </div>
+      <FilterButtons />
     </section>
   );
 }

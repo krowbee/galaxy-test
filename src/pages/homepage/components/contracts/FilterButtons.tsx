@@ -7,6 +7,7 @@ import {
   PenToolIcon,
   type LucideIcon,
 } from "lucide-react";
+import { useState } from "react";
 
 type ButtonType = {
   Icon: LucideIcon;
@@ -24,21 +25,25 @@ const buttons: ButtonType[] = [
 ];
 
 export function FilterButtons() {
+  const [isActive, setIsActive] = useState(0);
   return (
     <div className="flex flex-row flex-nowrap justify-between overflow-x-auto lg:overflow-x-hidden">
-      {buttons.map(({ Icon, text, isActive }) => (
+      {buttons.map(({ Icon, text }, index) => (
         <button
           key={text}
           className={`px-4 py-2 min-w-55 rounded-full shrink-0 flex flex-row items-center gap-2 cursor-pointer text-nowrap ${
-            isActive ? "bg-blue-500 text-white" : "bg-gray-200 text-black"
+            isActive === index
+              ? "bg-blue-500 text-white"
+              : "bg-gray-200 text-black"
           }`}
+          onClick={() => setIsActive(index)}
         >
           <div
-            className={`${isActive ? "bg-white" : "bg-blue-500"} rounded-full p-2`}
+            className={`${isActive === index ? "bg-white" : "bg-blue-500"} rounded-full p-2`}
           >
             <Icon
               size={20}
-              className={`rounded-full ${isActive ? "text-blue-500" : "text-white"}`}
+              className={`rounded-full ${isActive === index ? "text-blue-500" : "text-white"}`}
             />
           </div>
           {text}
