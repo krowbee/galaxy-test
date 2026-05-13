@@ -6,9 +6,9 @@ export function Header() {
   return (
     <header className="fixed flex flex-row md:m-4 top-0 w-full bg-linear-to-r justify-between items-center from-white/35 to-white/20  px-6 py-4 z-20 rounded-3xl">
       <div className="relative">
-        <h1 className="relative uppercase text-3xl font-bold z-10 font-montserrat ">
+        <h2 className="relative uppercase text-3xl font-bold z-10 font-montserrat ">
           Test task
-        </h1>
+        </h2>
         <div className="absolute rounded-full w-6 h-6 -top-1 -left-1.5 z-0 bg-blue-500" />
       </div>
       <nav className="hidden md:flex md:flex-row  font-montserrat gap-10">

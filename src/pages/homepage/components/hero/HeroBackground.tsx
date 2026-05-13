@@ -1,6 +1,6 @@
 export function HeroBackground() {
   return (
-    <picture className="absolute inset-0 w-full h-full">
+    <picture className="absolute inset-0 w-full h-full z-0">
       <source srcSet="/hero/background.webp" type="image/webp" />
       <img
         src="/hero/background.jpg"
