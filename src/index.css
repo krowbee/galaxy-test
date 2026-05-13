@@ -4,3 +4,16 @@
 @theme {
   --font-montserrat: "Montserrat", sans-serif;
 }
+
+@keyframes animate-marquee {
+  0% {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-100% / 3));
+  }
+}
+
+.marquee {
+  animation: animate-marquee 10s infinite linear;
+}

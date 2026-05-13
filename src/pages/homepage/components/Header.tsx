@@ -4,7 +4,7 @@ import { BurgerMenu } from "./burger-menu/BurgerMenu";
 export function Header() {
   const isMobile = useMobile();
   return (
-    <div className="fixed z-20 w-full px-3 pt-3 md:px-8 lg:px-12">
+    <div className="absolute z-20 w-full px-3 pt-3 md:px-8 lg:px-12">
       <header className="flex flex-roww-full bg-linear-to-r justify-between items-center from-white/35 to-white/30  px-6 py-4 z-20 rounded-full">
         <div className="relative">
           <h2 className="relative uppercase text-2xl font-bold z-10 font-montserrat ">
