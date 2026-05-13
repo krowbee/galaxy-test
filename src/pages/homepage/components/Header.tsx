@@ -8,16 +8,18 @@ export function Header() {
         <div className="absolute rounded-full w-6 h-6 -top-1 -left-1.5 z-0 bg-blue-500" />
       </div>
       <nav className="flex flex-row font-montserrat gap-10">
-        <a href="#" className="text-blue-600">
+        <a href="#" className="text-blue-600 active">
           Home
         </a>
         <a href="#">How It Works</a>
         <a href="#">Latest Contracts Post</a>
       </nav>
-      <div className="flex flex-row">
-        <a href="#">Login</a>
+      <div className="flex flex-row justify-center items-center gap-6 font-montserrat">
+        <a href="#" className="text-lg">
+          Login
+        </a>
         <a href="#">
-          <button className="py-2 px-4 rounded-3xl border border-blue-600 text-blue-600 text-lg">
+          <button className="py-2 px-4 rounded-3xl border cursor-pointer border-blue-600 text-blue-600 text-lg">
             Sign up
           </button>
         </a>
